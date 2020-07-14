@@ -1,0 +1,219 @@
+/* *{
+    margin:0;
+    padding: 0;
+} */
+
+body{
+    font-family: Arial;
+    font-size: 16px;
+    line-height: 1.6en;
+}
+
+.container-1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.showcase {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    width: 100%;
+    padding-left: 25%
+}
+
+
+
+.button {
+    align-self: flex-start;
+    background: coral;
+    padding: 1em 2em;
+    color: white;
+    border: 0
+}
+
+.button:hover {
+    background: grey
+}
+
+.modal {
+    display:none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.modalProject {
+    display:none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.modal-content{
+    background-color: rgb(255, 255, 255);
+    margin: 10% auto;
+    padding: 20px;
+    width: 70%;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0,0,0,0.17);
+}
+
+.modalProject-content{
+    background-color: rgb(255, 255, 255);
+    margin: 10% auto;
+    padding: 20px;
+    width: 40%;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0,0,0,0.17);
+}
+
+.closeBtn, .closeProjectBtn {
+    color: #ccc;
+    float: right;
+    font-size: 30px
+}
+
+.closeToDo{
+    color: rgb(0, 0, 0);
+    transform: scale(1.5);
+    position: absolute;
+    left: 95%;
+    top: 14%;
+    background-color: inherit;
+    border: 0;
+}
+
+
+.closeBtn:hover, .closeBtn:focus, .closeProjectBtn:hover, .closeProjectBtn:focus, .closeToDo:hover, #expand:hover{
+    color: black;
+    text-decoration: none;
+    cursor: pointer
+}
+
+#main-header {
+    flex:1;
+    text-align: center;
+    background-color: #333;
+    color: white;
+    height: 50px;
+    padding: 20px;
+    position: relative;
+}
+
+#navbar {
+    flex:1;
+    text-align: center;
+    background-color: grey;
+    color: white;
+    padding: 20px;
+    position: relative
+}
+
+/* .showcase div{
+    padding: 50px;
+} */
+
+#showcase {
+    flex:1;
+}
+
+.card {
+    width: 50%;
+    margin: 10px;
+    position: relative
+}
+
+.cardRed {
+    width: 50%;
+    margin: 10px;
+    position: relative;
+    background-color: rgb(250, 91, 91)
+}
+
+.cardGreen {
+    width: 50%;
+    margin: 10px;
+    position: relative;
+    background-color: rgb(110, 216, 84)
+}
+
+.cardMedium {
+    width: 50%;
+    margin: 10px;
+    position: relative;
+    background-color: rgb(241, 230, 127);
+}
+
+.my-form {
+    padding: 20px
+}
+
+.my-form .form-group {
+    padding-bottom: 15px
+}
+
+.my-form label {
+    display:block
+}
+
+.my-form input[type="text"] {
+    padding: 8px;
+    width: 100%
+}
+
+footer {
+    flex:1;
+    text-align: center;
+      height: 50px;
+    padding: 20px;
+    position: relative;
+    bottom: 50%
+}
+
+#expand {
+  content: '\25be';
+  position: absolute;
+  left: 95%;
+  top: 60%;
+  background-color: inherit;
+  border: 0;
+  transform: scale(1.5)
+}
+
+#expand::after {
+    content: '\25be'
+}
+
+#expand_active {
+    content: '\25be';
+    position: absolute;
+    left: 95%;
+    top: 60%;
+    background-color: inherit;
+    border: 0;
+    transform: scale(1.5)
+}
+#expand_active::after {
+    content: '\25b4'
+}
+
+#expandContent{
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height;
+}
+
+#expandContent_active {
+    overflow: hidden;
+    max-height: 100px;
+    transition: max-height;
+}
