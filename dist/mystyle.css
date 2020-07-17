@@ -36,6 +36,31 @@ body{
     background: grey
 }
 
+#editButton {
+    background: rgb(54, 31, 31);
+    color: rgb(233, 233, 233);
+    border: 0;
+    float: left;
+    padding: 1em 2em;
+}
+
+#editButto:hover {
+    background: grey
+}
+
+#submit-edit {
+    display: none;
+    align-self: flex-start;
+    background: coral;
+    padding: 1em 2em;
+    color: white;
+    border: 0
+}
+
+#submit-edit:hover {
+    background: grey
+}
+
 .modal {
     display:none;
     position: fixed;
@@ -117,10 +142,6 @@ body{
     padding: 20px;
     position: relative
 }
-
-/* .showcase div{
-    padding: 50px;
-} */
 
 #showcase {
     flex:1;
@@ -214,6 +235,6 @@ footer {
 
 #expandContent_active {
     overflow: hidden;
-    max-height: 100px;
+    max-height: 200px;
     transition: max-height;
 }
