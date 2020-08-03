@@ -17,7 +17,6 @@
   "bugs": {
     "url": "https://github.com/cam71101/to-do-app/issues"
   },
-  "homepage": "https://github.com/cam71101/to-do-app#readme",
   "devDependencies": {
     "eslint": "^7.4.0",
     "eslint-config-standard": "^14.1.1",
