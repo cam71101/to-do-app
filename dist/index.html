@@ -1,80 +1,95 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>To-do App</title>
-<link rel="stylesheet" type="text/css" href="mystyle.css">
-</head>
-<body>
+  <head>
+    <title>To-do App</title>
+    <link rel="stylesheet" type="text/css" href="mystyle.css" />
+  </head>
+  <body>
     <div class="container-1">
+      <div id="main-header">
+        <h1>To-Do app</h1>
+      </div>
 
-        <div id="main-header">
-                <h1>To-Do app</h1>
-        </div>  
-
-        <div id="navbar">
-                <label for ="projects"> Choose project</label>
-                <select name="projects" id="dropdown">
-                    <option value=""></option>
-                </select>
-                <button id="newProject" class="button" >New Project</button>
-                <button id="removeProject" class="button" >Remove Project</button>
-        </div>  
+      <div id="navbar">
+        <label for="projects"> Choose project</label>
+        <select name="projects" id="dropdown">
+          <option value=""></option>
+        </select>
+        <button id="newProject" class="button">New Project</button>
+        <button id="removeProject" class="button">Remove Project</button>
+      </div>
     </div>
 
-    <button id="addToDo" class="button" >Add To-Do</button>
-    <div class="showcase">
-    </div>
+    <button id="addToDo" class="button">Add To-Do</button>
+    <div class="showcase"></div>
 
     <div class="modal">
-        <div class="modal-content">
-            <span class="closeBtn"> &times; </span>
-            <form class="my-form">
-                <div class="form-group">
-                    <label>Title: </label>
-                    <input type="text" name="title" id="title">
-                </div>
-                <div class="form-group">
-                    <label>Description: </label>
-                    <input type="text" name="description" id="description">
-                </div>
-                <div class="form-group">
-                    <label>Due date: </label>
-                    <input type="date" name="due-date" id="due-date">
-                </div>
-                <div class="form-group">
-                    <label>Priority: </label>
-                    <select id = "priority" name="priority">
-                        <option value = "high">High</option>
-                        <option value = "medium">Medium</option>
-                        <option value = "low">Low</option>
-                    </select>
-    
-                </div>
-                <input class="button" id="submit" type="submit" value="Submit" name="">
-                <input class="buttonSubmit" id="submit-edit" type="submit" value="Submit" name="">
-            </form>
-        </div>
+      <div class="modal-content">
+        <span class="closeBtn"> &times; </span>
+        <form class="my-form">
+          <div class="form-group">
+            <label>Title: </label>
+            <input type="text" name="title" id="title" />
+          </div>
+          <div class="form-group">
+            <label>Description: </label>
+            <input type="text" name="description" id="description" />
+          </div>
+          <div class="form-group">
+            <label>Due date: </label>
+            <input type="date" name="due-date" id="due-date" />
+          </div>
+          <div class="form-group">
+            <label>Priority: </label>
+            <select id="priority" name="priority">
+              <option value="high">High</option>
+              <option value="medium">Medium</option>
+              <option value="low">Low</option>
+            </select>
+          </div>
+          <input
+            class="button"
+            id="submit"
+            type="submit"
+            value="Submit"
+            name=""
+          />
+          <input
+            class="buttonSubmit"
+            id="submit-edit"
+            type="submit"
+            value="Submit"
+            name=""
+          />
+        </form>
+      </div>
     </div>
 
     <div class="modalProject">
-        <div class="modalProject-content">
-            <span class="closeProjectBtn"> &times; </span>
-            <form class="my-form">
-                <div class="form-group">
-                    <label>Project Name: </label>
-                    <input type="text" name="title" id="projectTitle">
-                </div>
-                <input class="button" id="submitProject" type="submit" value="Submit" name="">
-            </form>
-        </div>
+      <div class="modalProject-content">
+        <span class="closeProjectBtn"> &times; </span>
+        <form class="my-form">
+          <div class="form-group">
+            <label>Project Name: </label>
+            <input type="text" name="title" id="projectTitle" />
+          </div>
+          <input
+            class="button"
+            id="submitProject"
+            type="submit"
+            value="Submit"
+            name=""
+          />
+        </form>
+      </div>
     </div>
 
     <div id="footer">
-        <footer id="main-footer">
-            <p>Copyright David Fisher 2020</p>
-        </footer>
+      <footer id="main-footer">
+        <p>Copyright David Fisher 2020</p>
+      </footer>
     </div>
-</body>
-    <script src= "uuidv4.js"></script>
-    <script src="main.js"></script>
+  </body>
+  <script src="uuidv4.js"></script>
+  <script src="main.js"></script>
 </html>
