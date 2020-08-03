@@ -1,3 +1,5 @@
+const { uuid } = require('uuidv4');
+
 function Todo (title, description, dueDate, priority, currentProject) {
   this.title = title
   this.description = description
@@ -5,7 +7,7 @@ function Todo (title, description, dueDate, priority, currentProject) {
   this.priority = priority
   this.completed = false
   this.project = currentProject
-  this.id = uuidv4()
+  this.id = uuid()
 }
 
 const index = (() => {
